@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-g" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SurgeSentinel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              primary: {
+                light: '#6EE7B7',
+                DEFAULT: '#10B981',
+                dark: '#047857',
+              },
+              secondary: {
+                light: '#67E8F9',
+                DEFAULT: '#06B6D4',
+                dark: '#0E7490',
+              },
+              background: '#F0F9FF',
+              surface: '#FFFFFF',
+              'on-surface': '#1F2937',
+              'on-surface-muted': '#6B7280',
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      @media print {
+        /* Hide the entire interactive application */
+        .no-print {
+          display: none !important;
+        }
+        /* Show only the report component */
+        .print-only {
+          display: block !important;
+        }
+        /* Ensure the body background is white for the PDF */
+        body {
+          background-color: #fff !important;
+        }
+        /* Define the page layout for the PDF document */
+        @page {
+          size: A4;
+          margin: 2cm;
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.25.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.2.1",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.545.0",
+    "firebase/app": "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js",
+    "firebase/auth": "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js",
+    "firebase/analytics": "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js",
+    "firebase/firestore": "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js",
+    "firebase/": "https://aistudiocdn.com/firebase@^12.6.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-background font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "name": "SurgeSentinel - Real-Time Patient Surge Management",
+  "description": "SurgeSentinel is an advanced, AI-driven command center designed to address the critical challenge of unpredictable patient surges in healthcare facilities. It provides tailored dashboards for key user roles to enhance resource allocation and public health communication.",
+  "requestFramePermissions": []
+}
